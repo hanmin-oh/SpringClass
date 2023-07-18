@@ -1,0 +1,5 @@
+package com.tjoeun.springDI_xml_interface;
+
+public class Pencil4B extends Pencil{
+
+}

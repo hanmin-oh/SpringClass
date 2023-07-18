@@ -1,0 +1,8 @@
+package MainClass;
+
+public class Snippet {
+	public static void main(String[] args) {
+		MyCalculator
+	}
+}
+

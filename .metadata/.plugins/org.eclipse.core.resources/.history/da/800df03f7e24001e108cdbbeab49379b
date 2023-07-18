@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<bean id="student5" class="com.tjoeun.springDI_xml_namespace.Student">
+		<constructor-arg value="강감찬"/>
+		<constructor-arg value="27"/>
+		<constructor-arg>
+			<list>
+				<value>C</value>
+				<value>C++</value>
+				<value>C#</value>
+			</list>
+		</constructor-arg>
+		<property name="height" value="175"></property>
+		<property name="weight" value="68"></property>
+	</bean>
+	
+	<!-- Family 클래스 bean 설정 -->
+	<bean id="family" class="com.tjoeun.springDI_xml_namespace.Family">
+		<constructor-arg value="오세동"/>
+		<constructor-arg value="신영림"/>
+		<property name="sistername" value="오유민"/>
+	</bean>
+	
+	
+</beans>

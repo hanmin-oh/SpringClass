@@ -1,0 +1,14 @@
+//com.springsource.config.ui.prefs.activePageIndex\:/k20230717_1_springDI_1_xml_setter/src/main/resources/applicationCTX.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
+//com.springsource.config.ui.prefs.activePageIndex\:/k20230717_5_springDI_xml_namespace/src/main/resources/applicationCTX.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
+//com.springsource.config.ui.prefs.activePageIndex\:/k20230717_5_springDI_xml_namespace/src/main/resources/applicationCTX2.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
+//com.springsource.config.ui.prefs.activePageIndex\:/k20230718_1_springDI_java/src/main/resources/applicationCTX.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
+//com.springsource.config.ui.prefs.activePageIndex\:/k20230718_2_springDI_xml_in_java/src/main/resources/applicationCTX.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
+//com.springsource.config.ui.prefs.activePageIndex\:/k20230718_3_springDI_java_in_xml/src/main/resources/applicationCTX.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
+//com.springsource.config.ui.prefs.activePageIndex\:/k20230718_4_springLifeCycle/src/main/resources/applicationCTX.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
+//com.springsource.config.ui.prefs.activePageIndex\:/k20230718_5_springProfile_xml/src/main/resources/applicationCTX_dev.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
+//com.springsource.config.ui.prefs.activePageIndex\:/k20230718_5_springProfile_xml/src/main/resources/applicationCTX_run.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
+//com.springsource.config.ui.prefs.activePageIndex\:/k20230718_7_springProperties_Envrioment/src/main/resources/admin.properties.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
+//com.springsource.config.ui.prefs.activePageIndex\:/k20230718_7_springProperties_Envrioment/src/main/resources/applicationCTX.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
+//com.springsource.config.ui.prefs.activePageIndex\:/k20230718_8_springProperties_Envrioment/src/main/resources/applicationCTX.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
+//com.springsource.config.ui.prefs.activePageIndex\:/k20230718_9_springProperties_xml/src/main/resources/applicationCTX.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
+eclipse.preferences.version=1

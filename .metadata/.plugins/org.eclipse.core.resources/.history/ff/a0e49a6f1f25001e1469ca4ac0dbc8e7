@@ -1,0 +1,5 @@
+package com.tjoeun.springProfile_xml;
+
+public class ServerInfo {
+
+}

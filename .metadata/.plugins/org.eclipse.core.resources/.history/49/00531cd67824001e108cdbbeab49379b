@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="student" class="com.tjoeun.springDI_xml_namespace.Student">
+		<constructor-arg value="이순신"/>
+		<constructor-arg value="20"/>
+		<constructor-arg>
+			<list>
+				<value>java</value>
+				<value>jsp</value>
+				<value>spring</value>
+			</list>
+		</constructor-arg>
+		<property name="height" value="175"></property>
+		<property name="weight" value="65"></property>
+	</bean>
+
+	<bean id="student3" class="com.tjoeun.springDI_xml_namespace.Student">
+		<constructor-arg value="이순신"/>
+		<constructor-arg value="20"/>
+		<constructor-arg>
+			<list>
+				<value>java</value>
+				<value>jsp</value>
+				<value>spring</value>
+			</list>
+		</constructor-arg>
+		<property name="height" value="175"></property>
+		<property name="weight" value="65"></property>
+	</bean>
+
+	<bean id="student4" class="com.tjoeun.springDI_xml_namespace.Student">
+		<constructor-arg value="을지문덕"/>
+		<constructor-arg value="25"/>
+		<constructor-arg>
+			<list>
+				<value>python</value>
+				<value>flask</value>
+				<value>django</value>
+			</list>
+		</constructor-arg>
+		<property name="height" value="175"></property>
+		<property name="weight" value="65"></property>
+	</bean>
+	
+	<bean>
+		<property name="studentInfo" ref="student4"/>
+	</bean>
+	
+	
+</beans>

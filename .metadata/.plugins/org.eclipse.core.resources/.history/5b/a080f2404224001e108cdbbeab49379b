@@ -1,0 +1,7 @@
+package com.tjoeun.springDI_1_xml_setter;
+
+// MyCalculator 클래스에서 호출되는 firstNum, secondNum을 인수로 넘겨받아 사칙연사을 실행하는 메소드를 모아놓은 클래스
+public class Calculator {
+	
+
+}

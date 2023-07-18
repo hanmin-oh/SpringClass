@@ -1,0 +1,22 @@
+package com.tjoeun.springDI_1_xml_setter;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		
+		/*
+		MyCalculator myCalculator  = new MyCalculator();
+		myCalculator.setFirstNum(5);
+		myCalculator.setSecondNum(15);
+		
+		Calculator calculator = new Calculator();
+		myCalculator.setCalculator(calculator);
+			
+		myCalculator.add();
+		myCalculator.sub();
+		myCalculator.mul();
+		myCalculator.div();
+		*/
+	}
+
+}

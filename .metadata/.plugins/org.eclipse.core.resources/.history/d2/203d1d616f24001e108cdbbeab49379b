@@ -1,0 +1,8 @@
+package com.tjoeun.springDI_xml_interface;
+
+public class MainClass {
+	
+	public static void main(String[] args) {
+		
+	}
+}

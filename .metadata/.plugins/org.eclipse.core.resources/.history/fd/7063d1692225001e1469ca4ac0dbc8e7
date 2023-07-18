@@ -1,0 +1,28 @@
+package com.tjoeun.springProfile_xml;
+
+import java.util.Scanner;
+
+import org.springframework.context.support.AbstractApplicationContext;
+import org.springframework.context.support.GenericXmlApplicationContext;
+
+public class MainClass {
+	
+	public static void main(String[] args) {
+		
+		String dev = "classpath:applicationCTX_dev.xml";
+		String run = "classpath:applicationCTX_run.xml";
+		// bean을 설정하는 xml 파일에 profile이 지정된 경우 아래와 같이 bean을 생성하면 안된다.  
+//		AbstractApplicationContext ctx = new GenericXmlApplicationContext(dev , run);
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("실행할 작업 환경을 입력하세요(1 => dev, 2=> run): ");
+		int info = scanner.nextInt();
+		String config = "";
+		
+		
+		
+//		ServerInfo serverInfo  = ctx.getBean("serverInfo" , ServerInfo.class);
+//		System.out.println(serverInfo);
+		
+	}
+
+}

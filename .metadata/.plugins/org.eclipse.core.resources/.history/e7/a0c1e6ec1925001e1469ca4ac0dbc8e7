@@ -1,0 +1,30 @@
+package com.tjoeun.springLifeCycle;
+
+import org.springframework.context.support.AbstractApplicationContext;
+import org.springframework.context.support.GenericXmlApplicationContext;
+
+
+public class MainClass {
+	
+	public static void main(String[] args) {
+		
+		/*
+		 * afterPropertiesSet() 메소드는 실행되지만 destory() 메소드가 실행되지 않는다.
+		 * AbstractApplicationContext ctx = new
+		 * GenericXmlApplicationContext("classpath:applicationCTX.xml");
+		 * 
+		 * Person person = ctx.getBean("person", Person.class);
+		 * System.out.println(person);
+		 * 
+		 * 
+		 * Person person2 = ctx.getBean("person2", Person.class);
+		 * System.out.println(person2);
+		 */
+		
+		
+		
+		
+		
+	}
+
+}

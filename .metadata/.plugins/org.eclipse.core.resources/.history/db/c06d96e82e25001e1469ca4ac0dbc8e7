@@ -1,0 +1,8 @@
+package com.tjoeun.springProfile_java;
+
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class ApplicationConfigRun {
+
+}

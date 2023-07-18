@@ -1,0 +1,18 @@
+package com.tjoeun.springLifeCycle;
+
+import org.springframework.context.support.AbstractApplicationContext;
+import org.springframework.context.support.GenericXmlApplicationContext;
+
+import com.tjoeun.springDI_xml_in_java.Student;
+
+public class MainClass {
+	
+	public static void main(String[] args) {
+		
+		AbstractApplicationContext ctx = new GenericXmlApplicationContext("classpath:applicationCTX.xml"); 
+		
+		Person student = ctx.getBean("student", Student.class);
+		System.out.println(student);
+	}
+
+}

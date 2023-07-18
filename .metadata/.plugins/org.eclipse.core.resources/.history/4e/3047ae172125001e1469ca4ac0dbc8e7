@@ -1,0 +1,19 @@
+package com.tjoeun.springProfile_xml;
+
+import org.springframework.context.support.AbstractApplicationContext;
+import org.springframework.context.support.GenericXmlApplicationContext;
+
+public class MainClass {
+	
+	public static void main(String[] args) {
+		
+		String dev = "classpath:applicationCTX_dev.xml";
+		String run = "classpath:applicationCTX_run.xml";
+		AbstractApplicationContext ctx = new GenericXmlApplicationContext("classpath:applicationCTX_dev.xml");
+		
+		ServerInfo serverInfo  = ctx.getBean("serverInfo" , ServerInfo.class);
+		System.out.println(serverInfo);
+		
+	}
+
+}

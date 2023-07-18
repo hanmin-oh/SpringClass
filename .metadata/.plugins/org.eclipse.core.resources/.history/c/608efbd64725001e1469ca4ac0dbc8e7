@@ -1,0 +1,10 @@
+package com.tjoeun.springProperties_xml;
+
+public class MainClass {
+	
+	public static void main(String[] args) {
+		
+		
+	}
+
+}

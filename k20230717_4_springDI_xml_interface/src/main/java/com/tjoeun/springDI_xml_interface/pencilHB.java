@@ -1,0 +1,15 @@
+package com.tjoeun.springDI_xml_interface;
+
+public class pencilHB implements Pencil {
+
+	@Override
+	public void use() {
+		
+		
+		System.out.println("HB 연필로 글씨를 씁니다.");
+		
+		
+
+	}
+
+}

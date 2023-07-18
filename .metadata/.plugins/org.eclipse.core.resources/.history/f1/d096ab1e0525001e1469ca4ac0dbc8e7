@@ -1,0 +1,5 @@
+package com.tjoeun.springDI_java;
+
+public class ApplicationConfig {
+
+}

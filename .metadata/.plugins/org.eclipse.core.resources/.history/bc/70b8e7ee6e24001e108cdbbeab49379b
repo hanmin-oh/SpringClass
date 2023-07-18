@@ -1,0 +1,10 @@
+package com.tjoeun.springDI_xml_interface;
+
+public class Pencil4B implements Pencil {
+
+	@Override
+	public void use() {
+		
+	}
+
+}

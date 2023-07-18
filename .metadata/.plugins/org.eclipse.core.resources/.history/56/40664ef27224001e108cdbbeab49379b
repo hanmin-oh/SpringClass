@@ -1,0 +1,19 @@
+package com.tjoeun.springDI_xml_namespace;
+
+import java.util.ArrayList;
+
+public class Student {
+	
+	private String name;
+	private int age;
+	private ArrayList<String> subject;
+	private double height;
+	private double weight;
+	
+	
+	public Student() {	}
+
+
+	
+	
+}

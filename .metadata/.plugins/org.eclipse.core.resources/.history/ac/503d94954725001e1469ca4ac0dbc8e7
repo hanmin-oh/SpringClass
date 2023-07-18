@@ -1,0 +1,12 @@
+package com.tjoeun.springProperties_xml;
+
+// AdminConnection 클래스의 bean이 생성되는 순간 admin.properties 파일의 내용을 읽어서 필드에 저장한다. 
+public class AdminConnection {
+	
+	private String adminId; 
+	private String adminPw; 
+	
+	
+	
+	
+}

@@ -1,0 +1,23 @@
+package com.tjoeun.springDI_1_xml_setter;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		
+		/*
+		// 자바에서 사용하던 방식
+		MyCalculator myCalculator  = new MyCalculator();
+		myCalculator.setFirstNum(5);
+		myCalculator.setSecondNum(15);
+		
+		Calculator calculator = new Calculator();
+		myCalculator.setCalculator(calculator);
+			
+		myCalculator.add();
+		myCalculator.sub();
+		myCalculator.mul();
+		myCalculator.div();
+		*/
+	}
+
+}

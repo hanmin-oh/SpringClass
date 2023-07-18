@@ -1,0 +1,16 @@
+package com.tjoeun.springProfile_java;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class ApplicationConfigDev {
+	
+	@Bean
+	public ServerInfo serverInfo() {
+		ServerInfo serverInfo = new ServerInfo();
+		serverInfo.setIpNumver("localhost");
+		return null;
+	}
+	
+}

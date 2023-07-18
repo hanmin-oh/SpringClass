@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="k20230717_1_springDI_1_xml_setter"/>
+<aop-project name="k20230717_3_springDI_xml_constructor"/>
+<aop-project name="k20230717_5_springDI_xml_namespace"/>
+<aop-project name="k20230717_2_springDI_2_xml_setter"/>
+<aop-project name="k20230718_8_springProperties_Envrioment"/>
+<aop-project name="k20230717_4_springDI_xml_interface"/>
+<aop-project name="k20230718_7_springProperties_Envrioment"/>
+<aop-project name="k20230718_4_springLifeCycle"/>
+<aop-project name="k20230718_5_springProfile_xml"/>
+</aop-reference-model>

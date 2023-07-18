@@ -1,0 +1,11 @@
+package com.tjoeun.springLifeCycle;
+
+public class MainClass {
+	
+	public static void main(String[] args) {
+		
+		AbstractApplicationContext ctx = new GenericXmlApplicationContext("classpath:applicationCTX.xml"); 
+				
+	}
+
+}
