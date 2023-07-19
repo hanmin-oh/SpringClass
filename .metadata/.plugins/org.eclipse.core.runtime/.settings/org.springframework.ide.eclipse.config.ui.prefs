@@ -11,4 +11,7 @@
 //com.springsource.config.ui.prefs.activePageIndex\:/k20230718_7_springProperties_Envrioment/src/main/resources/applicationCTX.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
 //com.springsource.config.ui.prefs.activePageIndex\:/k20230718_8_springProperties_Envrioment/src/main/resources/applicationCTX.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
 //com.springsource.config.ui.prefs.activePageIndex\:/k20230718_9_springProperties_xml/src/main/resources/applicationCTX.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
+//com.springsource.config.ui.prefs.activePageIndex\:/k20230719_2_springAOP_xml/src/main/resources/applicationCTX.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
+//com.springsource.config.ui.prefs.activePageIndex\:/k20230719_3_springAOP_java/src/main/resources/applicationCTX.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
+//com.springsource.config.ui.prefs.activePageIndex\:/k20230719_4_springWeb_sample/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
 eclipse.preferences.version=1

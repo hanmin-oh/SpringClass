@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.2.xsd">
+
+	
+	<!-- Student 클래스의 bean -->
+	<bean id="student" class="com.tjoeun.springAOP_xml.Student">
+		<property name="name" value="이순신"/>
+		<property name="age" value="12"/>
+		<property name="gradeNum" value="5"/>
+		<property name="classNum" value="15"/>
+	</bean>
+	
+	<!-- Worker 클래스의 bean -->	
+	<bean id="worker" class="com.tjoeun.springAOP_xml.Worker">
+		<property name="name" value="을지문덕"/>
+		<property name="age" value="48"/>
+		<property name="job" value="군인"/>
+	</bean>
+	
+	<!-- AopTest 클래스의 bean -->	
+	<bean id="aopTest" class="com.tjoeun.springAOP_xml.AOPTest"/>
+	
+	<!--  
+		xml 파일로 AOP 설정 준비 사항
+		1. pom.xml 파일에 aspectjweaver dependency를 추가한다.
+		2. bean 설정 xml 파일에 aop namesapce를 추가한다.
+		3. AOP 메소드가 작성된 클래스의 bean을 생성한다. 
+	-->
+	<bean id="logAop" class="com.tjoeun.springAOP_xml.LogAOP"/>
+	
+	<!-- <aop:config> 태그 내부에서 AOP 환경을 설정한다. -->
+	<aop:config> <!-- AOP 설정 시작 -->
+	
+		<!-- 
+			<aop:aspect> 태그로 공통 기능 메소드가 저장된 클래스의 bean과 연결한다. 
+			실행할 공통 기능 메소드가 정의된 클래스의 bean을 지정하고 pointcut을 설정한다.
+			id 속성은 공통 기능 메소드가 정의된 bean을 식별한다. => 식별이 목적이므로 뭐를 적어도 상관없다.
+			ref 속성은 공통 기능 메소드가 정의된 bean과 연결(참조)한다. 
+		 -->
+		
+		<aop:aspect id="logger" ref="logAop"> <!-- AOP 설정 시작 => 공통 기능 메소드가 작성된 클래스 단위 -->
+			
+			<!--  
+				<aop:pointcut>태그로 pointcut(공통 기능이 실행될 위치)을 정한다. 
+				expression within() 또는 excution()을 사용해서 pointcut을 지정한다. 
+					=> within() : 클래스 단위로 pointcut을 지정한다.
+					=> execution() : 메소드 단위로 pointcut을 지정한다. 
+				id 속성은 pointcut을 식별한다. => 식별이 목적이므로 뭐를 적어도 상관없다.
+				
+				 within(*) 프로젝트의 모든 클래스의 모든 메소드에 공통 기능을 적용한다
+				 within(aopTest.*) aopTest 패키지의 모든 클래스의 모든 메소드에 공통 기능을 적용한다. 
+				 
+				 
+				 
+				 execution()은 ()안에 "*"을 먼저 입력한 후 1칸 띄운 후 pointcut을 지정한다. 
+				 execution(* *.*()) : 프로젝트의 모든 패키지의 모든 클래스의 모든 메소드에 공통 기능을 적용한다.
+			-->
+			<aop:pointcut expression="within(*)" id="beforeMethod"/>
+			<aop:pointcut expression="within(com.tjoeun.springAOP_xml.*)" id="afterReturningMethod"/>
+			<aop:pointcut expression="within(com.tjoeun.springAOP_xml.Student)" id="afterThworingMethod"/>
+			<aop:pointcut expression="execution(* *.*())" id="afterMethod"/>
+			<!--
+				설정된 pointcut에 따른 공통 기능을 실행한다.
+					<aop:before>  : 핵심 기능 실행 전
+					<aop:after-returning> : 핵심 기능이 정상적으로 종료된 후 
+					<aop:after-throwing> : 핵심 기능을 실행하다 exception이 발생된 후 
+					<aop:after> : 핵심 기능 실행 시 exception 발생 여부와 상관없이 
+					<aop:around> : 핵심 기능 실행 전과 후
+					
+					method 속성에는 <asp:aspect> 태그에서 참조시킨 클래스의 공통 기능 메소드 이름을 지정한다.
+					메소드 이름 뒤에 ()는 붙이지 않는다.
+					pointcut-ref 속성에는 공통 기능을 실행할 pointcut의 id 속성을 참조시킨다.
+			-->
+			<aop:before method="before" pointcut-ref="beforeMethod"/>
+			<aop:after-returning method="afterReturning" pointcut-ref="afterReturningMethod"/>
+			<aop:after-throwing method="afterThworing" pointcut-ref="afterThworingMethod"/>
+			<aop:after method="after" pointcut-ref="afterMethod"/>
+			
+			
+		</aop:aspect> <!-- AOP 환경 설정 끝 => 공통 기능 메소드가 작성된 클래스 단위  -->
+		
+	</aop:config>  <!-- AOP 환경 설정 끝 -->
+
+	
+</beans>
