@@ -22,7 +22,7 @@
 	</bean>
 	
 	<!-- AopTest 클래스의 bean -->	
-	<bean id="aopTest" class="com.tjoeun.springAOP_xml.AOPTest"/>
+	<bean id="aopTest" class="aopTest.AOPTest"/>
 	
 	<!--  
 		xml 파일로 AOP 설정 준비 사항
