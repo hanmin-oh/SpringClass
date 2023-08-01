@@ -16,6 +16,7 @@ import com.tjoeun.service.DeleteService;
 import com.tjoeun.service.IncrementService;
 import com.tjoeun.service.InsertService;
 import com.tjoeun.service.MvcBoardService;
+import com.tjoeun.service.ReplyService;
 import com.tjoeun.service.SelectService;
 import com.tjoeun.service.UpdateService;
 
@@ -182,10 +183,10 @@ public class HomeController {
 		
 //		답변을 입력할 글 1건을 얻어오는 메소드를 실행한다. 
 		AbstractApplicationContext ctx = new GenericXmlApplicationContext("classpath:applicationCTX.xml");
-		MvcBoardService service = ctx.getBean("contentView" , ContentViewService.class);
+		MvcBoardService service = ctx.getBean("reply" , ReplyService.class);
 		service.execute(model);
 		
-		return "redirect:reply";
+		return "redirect:list";
 	}
 	
 	

@@ -35,7 +35,6 @@ public class ContentViewService implements MvcBoardService {
 	    MvcBoardVO mvcBoardVO = mvcBoardDAO.selectByIdx(idx);
 
 //	   	contentView.jsp에 넘겨줄 글 1건, 작업 후 돌아갈 페이지 번호, 줄바꿈에 사용할 "\r\n"을 Model 인터페이스 객체에 넣어준다.
-	    
 	    model.addAttribute("vo" , mvcBoardVO);
 	    model.addAttribute("currentPage" , request.getParameter("currentPage"));
 	    model.addAttribute("enter" , "\r\n");
