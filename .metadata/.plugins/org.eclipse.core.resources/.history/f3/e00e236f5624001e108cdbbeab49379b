@@ -1,8 +1,0 @@
-package com.tjoeun.springDI_2_xml_setter;
-
-public class BMICalculator {
-	
-//	키(height)와 몸무게(weight)를 인수로 넘겨받아 BMI 지수를 계산하고 등급을 출력하는 메소드
-	
-
-}

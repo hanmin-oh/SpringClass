@@ -10,8 +10,14 @@
 		</layout>
 	</appender>
 	
-	<!-- Application Loggers -->
+	<!-- 로그를 출력할 패키지 지정 -->
 	<logger name="com.tjoeun.springWEB_DBCP_board">
+		<level value="info" />
+	</logger>
+	<logger name="com.tjoeun.service">
+		<level value="info" />
+	</logger>
+	<logger name="com.tjoeun.dao">
 		<level value="info" />
 	</logger>
 	

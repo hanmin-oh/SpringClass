@@ -1,5 +1,0 @@
-package com.tjoeun.springDI_2_xml_setter;
-
-public class BMICalculator {
-
-}

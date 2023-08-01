@@ -1,8 +1,0 @@
-package com.tjoeun.springDI_xml_constructor;
-
-public class MainClass {
-	
-	public static void main(String[] args) {
-		
-	}
-}

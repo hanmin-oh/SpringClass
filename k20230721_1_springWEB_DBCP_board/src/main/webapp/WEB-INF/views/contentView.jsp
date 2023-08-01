@@ -9,8 +9,8 @@
 <title>Insert title here</title>
 </head>
 <body>
-${vo}
-<form action="update.ohm" method="post">
+
+<form action="update" method="post">
 	<table width="600" align="center" border="1" cellpadding="5" cellspacing="0">
 		<tr>
 			<th colspan="4">게시글 보기</th>

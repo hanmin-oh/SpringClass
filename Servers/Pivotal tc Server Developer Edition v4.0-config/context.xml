@@ -12,4 +12,18 @@
             <Valve className="org.apache.catalina.valves.CometConnectionManagerValve" />
             -->
     <WatchedResource>${catalina.base}/conf/web.xml</WatchedResource>
+    
+    <Resource
+		name = "jdbc/oracle"							
+		auth = "Container"
+		type = "javax.sql.DataSource"
+		maxActive = "50"
+		maxIdle = "20"
+		maxWait = "-1"
+		url = "jdbc:oracle:thin:@localhost:1521:xe"
+		driverClassName = "oracle.jdbc.driver.OracleDriver"
+		username = "hanmin"
+		password = "0707"
+	/>
+    
 </Context>

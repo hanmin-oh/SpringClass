@@ -1,9 +1,0 @@
-package com.tjoeun.springDI_java;
-
-public class Snippet {
-	 <property name="calculator">
-		 	<ref bean="calculator"/>
-		 </property>
-	</bean>
-}
-

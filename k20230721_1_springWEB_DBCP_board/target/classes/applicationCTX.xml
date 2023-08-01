@@ -3,7 +3,20 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-	<!-- MvcBoardVO 클래스의 bean을 만든다. -->
+	<!-- VO 클래스의 bean을 만든다. -->
 	<bean id="mvcBoardVO" class="com.tjoeun.vo.MvcBoardVO"/>
+	<bean id="mvcBoardList" class="com.tjoeun.vo.MvcBoardList"/>
+	
+	<!-- Service 클래스의 bean을 만든다. -->
+	<bean id="insert" class="com.tjoeun.service.InsertService"/>
+	<bean id="select" class="com.tjoeun.service.SelectService"/>
+	<bean id="increment" class="com.tjoeun.service.IncrementService"/>
+	<bean id="contentView" class="com.tjoeun.service.ContentViewService"/>
+	<bean id="update" class="com.tjoeun.service.UpdateService"/>
+	<bean id="delete" class="com.tjoeun.service.DeleteService"/>
+	<bean id="reply" class="com.tjoeun.service.ReplyService"/>
+	
+	<!-- MvcBoardDAO 클래스의 bean을 만든다. -->
+	<bean id="mvcBoardDAO" class="com.tjoeun.dao.MvcBoardDAO"/>
 	
 </beans>

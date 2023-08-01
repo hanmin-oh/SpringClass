@@ -17,9 +17,8 @@ public class MvcBoardList {
 	private int startPage = 0;
 	private int endPage = 0;
 	
-	public MvcBoardList() {	}
-
-	public MvcBoardList(int pageSize, int totalCount, int currentPage) {
+//	pageSize, totalCount, currentPage를 인수로 넘겨받아 페이지 작업에 사용할 8개의 변수를 초기화시키는 메소드
+	public void initMvcBoardList(int pageSize, int totalCount, int currentPage) {
 		this.pageSize = pageSize;
 		this.totalCount = totalCount;
 		this.currentPage = currentPage;
