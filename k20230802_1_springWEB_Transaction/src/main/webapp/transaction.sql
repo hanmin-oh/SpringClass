@@ -15,6 +15,7 @@ delete from ticket;
 
 insert into ticket(consumerid , countnum) values ('1111' , '4');
 insert into ticket(consumerid , countnum) values ('2222' , '5');
+insert into card (consumerId, amount) values ('han', '2');
 select * from ticket;
-
+select * from card;
 

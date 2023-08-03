@@ -39,4 +39,12 @@
 		<beans:property name="dataSource" ref="dataSource"/>
 	</beans:bean>
 	
+	<!-- TransactionDAO 클래스의 bean 설정 -->
+	<beans:bean name="dao" class="com.tjoeun.DAO.TransactionDAO">
+		<beans:property name="template" ref="template"/>
+	</beans:bean>
+	
+	
+	
+	
 </beans:beans>

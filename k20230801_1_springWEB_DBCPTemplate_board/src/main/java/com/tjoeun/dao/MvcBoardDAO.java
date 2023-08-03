@@ -256,7 +256,7 @@ public class MvcBoardDAO {
 			e.printStackTrace();
 		} finally {	if (conn != null) {	try {conn.close();	} catch (SQLException e) {	e.printStackTrace();}}}
 		*/
-	
+		
 		String sql =  String.format("update mvcboard set subject = '%s', content = '%s' where idx = %d", subject, content, idx);
 		template.update(sql);
 	}
